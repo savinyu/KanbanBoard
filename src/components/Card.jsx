@@ -32,7 +32,7 @@ export const Card = ({ title, description, priority, status, tag }) => {
         </div>
         {tag && (
           <div className="tag">
-            <img className="tag-icon" src={'/assets/dot.svg'} alt="dot" />
+            <img className="tag-icon" src={'/assets/Dot.svg'} alt="dot" />
             <span className="tag-text">{tag}</span>
           </div>
         )}
