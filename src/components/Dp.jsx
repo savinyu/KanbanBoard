@@ -1,5 +1,3 @@
-import dot from '../../public/assets/dot.svg';
-
 export const Dp = ({ name, index, available }) => {
   const getInitials = (fullName) => {
     const nameParts = fullName.split(' ');
@@ -31,7 +29,7 @@ export const StatusDot = ({ isActive }) => {
   return (
     <div className="status-dot">
       <div style={dotStyle}></div>
-      <img src={dot} alt="dot" style={{ display: 'none' }} />
+      <img src={'/assets/dot.svg'} alt="dot" style={{ display: 'none' }} />
     </div>
   );
 };

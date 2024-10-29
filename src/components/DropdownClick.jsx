@@ -1,6 +1,4 @@
 import { useContext, useState } from 'react';
-import Display from '../../public/assets/Display.svg';
-import Down from '../../public/assets/down.svg';
 import { GroupContext, OrderContext } from '../App';
 
 export default function DropdownClick() {
@@ -31,10 +29,10 @@ export default function DropdownClick() {
         type="button"
       >
         <div className="button-content">
-          <img src={Display} alt="display" className="icon-display" />
+          <img src={'/assets/Display.svg'} alt="display" className="icon-display" />
           Display
         </div>
-        <img src={Down} alt="Down" className="icon-down" />
+        <img src={'/assets/down.svg'} alt="Down" className="icon-down" />
       </button>
 
       {isDropdownOpen && (
@@ -48,7 +46,7 @@ export default function DropdownClick() {
                   if(isNestedDropdownOpen2)handleNestedToggle(setIsNestedDropdownOpen2);
                 }} className='flex-sb selectStyle'>
                   <div>{grouping}</div>
-                  <img src={Down} alt="Nested Down" className="icon-nested-down" />
+                  <img src={'/assets/down.svg'} alt="Nested Down" className="icon-nested-down" />
                 </div>
               </a>
               {isNestedDropdownOpen && (
@@ -84,7 +82,7 @@ export default function DropdownClick() {
                   if(isNestedDropdownOpen)handleNestedToggle(setIsNestedDropdownOpen);
                   }} className='flex-sb selectStyle'>
                   <div>{ordering}</div>
-                  <img src={Down} alt="Nested Down" className="icon-nested-down" />
+                  <img src={'/assets/down.svg'} alt="Nested Down" className="icon-nested-down" />
                 </div>
               </a>
               {isNestedDropdownOpen2 && (

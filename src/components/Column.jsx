@@ -1,7 +1,5 @@
 import { Card } from "./Card";
-import add from '/assets/add.svg'
 import { Dp } from "./Dp";
-import threedot from '/assets/threedot.svg'
 
 
 export const Column = ({ title, tickets, userData, index }) => {
@@ -14,8 +12,8 @@ export const Column = ({ title, tickets, userData, index }) => {
                     <div className="item-count">{tickets.length}</div>
                 </div>
                 <div className="column-actions">
-                    <div className="action-icon cursor-pointer"><img src={add} alt="add"/></div>
-                    <div className="action-icon cursor-pointer"><img src={threedot} alt="threedot"/></div>
+                    <div className="action-icon cursor-pointer"><img src={'/assets/add.svg'} alt="add"/></div>
+                    <div className="action-icon cursor-pointer"><img src={'/assets/threedot.svg'} alt="threedot"/></div>
                 </div>
             </div>
             {tickets.map((ticket, index) => (

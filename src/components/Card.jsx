@@ -1,21 +1,11 @@
 import React from 'react';
-import dot from '../../public/assets/dot.svg';
-import priority0 from '../../public/assets/priority0.svg';
-import priority1 from '../../public/assets/priority1.svg';
-import priority2 from '../../public/assets/priority2.svg';
-import priority3 from '../../public/assets/priority3.svg';
-import priority4 from '../../public/assets/priority4.svg';
-import done from '../../public/assets/done.svg';
-import todo from '../../public/assets/todo.svg';
-import backlog from '../../public/assets/backlog.svg';
-import inprogress from '../../public/assets/inprogress.svg';
 
-const priorityImages = [priority0, priority1, priority2, priority3, priority4];
+const priorityImages = ['/assets/priority0.svg', '/assets/priority1.svg', '/assets/priority2.svg', '/assets/priority3.svg', '/assets/priority4.svg'];
 const statusImages = {
-  "Backlog": backlog,
-  "Done": done,
-  "In progress": inprogress,
-  "Todo": todo,
+  "Backlog": '/assets/backlog.svg',
+  "Done": '/assets/done.svg',
+  "In progress": '/assets/inprogress.svg',
+  "Todo": '/assets/todo.svg',
 };
 
 const truncateText = (text, maxLength) => {
@@ -42,7 +32,7 @@ export const Card = ({ title, description, priority, status, tag }) => {
         </div>
         {tag && (
           <div className="tag">
-            <img className="tag-icon" src={dot} alt="dot" />
+            <img className="tag-icon" src={'/assets/dot.svg'} alt="dot" />
             <span className="tag-text">{tag}</span>
           </div>
         )}
