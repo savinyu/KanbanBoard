@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
-import Display from '../assets/Display.svg';
-import Down from '../assets/down.svg';
+import Display from '../../public/assets/Display.svg';
+import Down from '../../public/assets/down.svg';
 import { GroupContext, OrderContext } from '../App';
 
 export default function DropdownClick() {

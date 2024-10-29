@@ -1,4 +1,4 @@
-import dot from '../assets/dot.svg';
+import dot from '../../public/assets/dot.svg';
 
 export const Dp = ({name,index,available}) => {
     const getInitials = (fullName) => {
@@ -25,7 +25,7 @@ export const StatusDot = ({ isActive }) => {
   };
 
   return (
-    <div className='absolute z-10 ml-3 mt-3.5'>
+    <div className='absolute z-10 ml-5 mt-0.5'>
       <div style={dotStyle}></div>
       <img src={dot} alt="dot" style={{ display: 'none' }} />
     </div>

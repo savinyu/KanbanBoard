@@ -1,14 +1,14 @@
 import React from 'react';
-import dot from '../assets/dot.svg';
-import priority0 from '../assets/priority0.svg';
-import priority1 from '../assets/priority1.svg';
-import priority2 from '../assets/priority2.svg';
-import priority3 from '../assets/priority3.svg';
-import priority4 from '../assets/priority4.svg';
-import done from '../assets/done.svg';
-import todo from '../assets/todo.svg';
-import backlog from '../assets/backlog.svg';
-import inprogress from '../assets/inprogress.svg';
+import dot from '../../public/assets/dot.svg';
+import priority0 from '../../public/assets/priority0.svg';
+import priority1 from '../../public/assets/priority1.svg';
+import priority2 from '../../public/assets/priority2.svg';
+import priority3 from '../../public/assets/priority3.svg';
+import priority4 from '../../public/assets/priority4.svg';
+import done from '../../public/assets/done.svg';
+import todo from '../../public/assets/todo.svg';
+import backlog from '../../public/assets/backlog.svg';
+import inprogress from '../../public/assets/inprogress.svg';
 
 const priorityImages = [
   priority0,

@@ -1,6 +1,6 @@
 import { Card } from "./Card";
-import add from '../assets/add.svg'
-import threedot from '../assets/threedot.svg'
+import add from '/assets/add.svg'
+import threedot from '/assets/threedot.svg'
 import { useContext } from "react";
 import { TicketsContext, UsersContext } from "../App";
 import { Dp } from "./Dp";

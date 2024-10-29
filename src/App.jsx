@@ -1,11 +1,8 @@
-import Topbar from './components/Topbar'
-import { Card } from './components/Card'
-
-import './App.css'
-import { Column } from './components/Column'
 import { createContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import Topbar from './components/Topbar'
 import { Board } from './components/Board';
+import './App.css'
 
 
 export const UsersContext = createContext([]);
