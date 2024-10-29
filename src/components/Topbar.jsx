@@ -8,7 +8,7 @@ export default function Topbar() {
     return (
       <>
         <div className="topbar">
-            <button><DropdownHover/></button>
+            <DropdownHover/>
         </div>
       </>
     )

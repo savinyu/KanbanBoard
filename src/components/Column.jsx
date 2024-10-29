@@ -1,9 +1,7 @@
 import { Card } from "./Card";
 import add from '/assets/add.svg'
-import threedot from '/assets/threedot.svg'
-import { useContext } from "react";
-import { TicketsContext, UsersContext } from "../App";
 import { Dp } from "./Dp";
+import threedot from '/assets/threedot.svg'
 
 
 export const Column = ({ title, tickets, userData, index }) => {
@@ -13,7 +11,7 @@ export const Column = ({ title, tickets, userData, index }) => {
                 <div className="column-title">
                     {userData && <Dp name={userData.name} index={index} available={userData.available} />}
                     <div className="title-text">{title}</div>
-                    <div className="item-count text-gray-500">{tickets.length}</div>
+                    <div className="item-count">{tickets.length}</div>
                 </div>
                 <div className="column-actions">
                     <div className="action-icon cursor-pointer"><img src={add} alt="add"/></div>
